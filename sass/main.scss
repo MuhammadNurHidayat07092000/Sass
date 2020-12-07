@@ -1,0 +1,45 @@
+// //CSS VARIABEL
+
+// :root {
+//     --primary-color: #f4f1de;
+//     --secondary-color: #f2cc8f;
+//     --text-color: #207a5f;
+// }
+
+// body {
+//     background-color: var(--primary-color);
+// }
+
+// h1  {
+//     background-color: var(--text-color);
+// }
+
+// p {
+//     color: var(--text-color);
+// }
+
+//SASS VARIABEL
+// $secondary-color: #f2cc8f;
+// $text-color: #207a5f;
+// $primary-color: red;
+
+// body {
+//     $primary-color: #f4f1de;
+//     background-color: $primary-color;
+// }
+
+// h1  {
+//     color: $primary-color;
+// }
+
+//MAP
+// $alert-danger: red;
+$alert: (
+    'danger'  : red,
+    'success' : green,
+    'warning' : orange
+);
+
+h1 {
+    color: map-get($alert, 'warning');
+}
